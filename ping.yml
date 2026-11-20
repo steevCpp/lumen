@@ -1,0 +1,8 @@
+# ping.yml
+---
+- name: Tester la connexion à tous les serveurs
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Ping
+      ansible.builtin.ping:
